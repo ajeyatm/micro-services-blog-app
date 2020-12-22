@@ -1,0 +1,23 @@
+{
+  "name": "comments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "pm2 start index.js --name \"comments-web-interface\"",
+    "stop": "pm2 stop comments-web-interface",
+    "restart": "pm2 restart comments-web-interface",
+    "delete": "pm2 delete comments-web-interface"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "pm2": "^4.5.1"
+  }
+}

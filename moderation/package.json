@@ -1,0 +1,22 @@
+{
+  "name": "moderation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "pm2 start index.js --name \"moderation-web-interface\"",
+    "stop": "pm2 stop moderation-web-interface",
+    "restart": "pm2 restart moderation-web-interface",
+    "delete": "pm2 delete moderation-web-interface"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "pm2": "^4.5.1"
+  }
+}
